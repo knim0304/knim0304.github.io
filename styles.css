@@ -31,17 +31,20 @@ body{
 nav{
   background: rgba(15, 27, 45, 0.92);
   backdrop-filter: blur(10px);
-  padding: 16px 24px;
   position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid rgba(255,255,255,0.06);
+
+  /* layout */
+  width: 100%;
   display: flex;
+  justify-content: center;   /* centers the whole row */
   align-items: center;
-  gap: 32px;
+  gap: 40px;                 /* more space between links */
   padding: 18px 32px;
-  letter-spacing: 0.5px;
 }
+
 
 
 nav a{
@@ -49,11 +52,20 @@ nav a{
   color: var(--muted);
   font-weight:500;
   transition: color 0.2s ease;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+  transition: color 0.2s ease, background 0.2s ease;
+  padding: 8px 10px;          /* adds breathing room */
+  border-radius: 10px;        /* smooth hover shape */
+
 }
 
 nav a:hover{
   color: var(--accent);
+  background: rgba(255,255,255,0.04);
 }
+
 
 /* SECTIONS */
 .section{ margin: 60px 0; }
