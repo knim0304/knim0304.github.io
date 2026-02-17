@@ -12,24 +12,11 @@
 
     .muted { color:#444; }
     .section { margin: 34px 0; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
     .card { border:1px solid #ddd; border-radius:12px; padding:20px; background:#fff; }
 
     .btn { display:inline-block; padding:10px 14px; border:1px solid #0066cc; border-radius:10px; text-decoration:none; color:#0066cc; font-weight:600; }
     .btn:hover { background:#f3f8ff; }
-
-    form label { display:block; font-weight:600; margin-top:14px; }
-    form input, form textarea {
-      width:100%;
-      padding:10px;
-      margin-top:6px;
-      border-radius:8px;
-      border:1px solid #ccc;
-      font-size: 1rem;
-    }
-    form textarea { min-height:120px; resize:vertical; }
-
-    .note { font-size:0.95rem; margin-top:12px; color:#555; }
   </style>
 </head>
 <body>
@@ -46,61 +33,31 @@
   <header class="section">
     <h1>Contact</h1>
     <p class="muted">
-      Feel free to reach out regarding internships, projects, or general questions.
+      The best way to reach me is by email or LinkedIn.
     </p>
   </header>
 
-  <section class="section grid">
-    <!-- Direct contact -->
-    <div class="card">
-      <h2 style="margin-top:0;">Direct Contact</h2>
-      <p>
-        The fastest way to reach me is by email or LinkedIn.
-      </p>
-
-      <p>
-        <strong>Email:</strong><br/>
+  <section class="section">
+    <div class="grid">
+      <div class="card">
+        <h2 style="margin-top:0;">Email</h2>
+        <p class="muted">Fastest response.</p>
         <a class="btn" href="mailto:knim714@gmail.com">knim714@gmail.com</a>
-      </p>
+      </div>
 
-      <p style="margin-top:14px;">
-        <strong>LinkedIn:</strong><br/>
+      <div class="card">
+        <h2 style="margin-top:0;">LinkedIn</h2>
+        <p class="muted">Connect or message me here.</p>
         <a class="btn" href="https://www.linkedin.com/in/kenneth-nim-808548280" target="_blank">
           linkedin.com/in/kenneth-nim-808548280
         </a>
-      </p>
+      </div>
 
-      <p style="margin-top:14px;">
-        <strong>GitHub:</strong><br/>
-        <a class="btn" href="https://github.com/knim0304" target="_blank">
-          github.com/knim0304
-        </a>
-      </p>
-    </div>
-
-    <!-- Message form -->
-    <div class="card">
-      <h2 style="margin-top:0;">Send a Message</h2>
-
-      <form>
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Your name" />
-
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Your email address" />
-
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Your message"></textarea>
-
-        <button class="btn" type="submit" style="margin-top:14px;">
-          Send Message
-        </button>
-      </form>
-
-      <p class="note">
-        Note: This form is for display purposes on a static site.
-        Please use the email or LinkedIn links to contact me directly.
-      </p>
+      <div class="card">
+        <h2 style="margin-top:0;">GitHub</h2>
+        <p class="muted">Code + project files.</p>
+        <a class="btn" href="https://github.com/knim0304" target="_blank">github.com/knim0304</a>
+      </div>
     </div>
   </section>
 
