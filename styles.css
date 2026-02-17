@@ -121,13 +121,14 @@ nav a:hover{
   margin: 40px 0;
 }
 
-/* Force "Jump to details" links to match muted gray */
+/* Fix Jump to Details link color */
 .toc a, .toc a:visited{
   color: var(--muted) !important;
   text-decoration: none !important;
 }
 
-.toc a:hover, .toc a:focus{
+.toc a:hover{
   color: var(--accent) !important;
   text-decoration: underline !important;
 }
+
