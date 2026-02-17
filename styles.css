@@ -132,3 +132,14 @@ nav a:hover{
   text-decoration: underline !important;
 }
 
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 14px 0;
+  background: rgba(15, 22, 35, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+
