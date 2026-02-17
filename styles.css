@@ -189,3 +189,47 @@ footer a{
 footer a:hover{
   color: var(--accent);
 }
+
+/* HERO BANNER */
+
+.hero{
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0b1c34, #112a4f);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-container{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-left{
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-right{
+  flex: 0 0 260px;
+  text-align: center;
+}
+
+.hero-right img{
+  width: 260px;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.hero-buttons{
+  margin-top: 20px;
+}
+
+.hero-buttons .btn{
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
