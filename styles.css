@@ -119,21 +119,15 @@ nav a:hover{
   border:0;
   border-top:1px solid var(--border);
   margin: 40px 0;
-  
-  a, a:visited{
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.2s ease;
 }
 
-  a:hover, a:focus{
-  color: var(--accent);
-  text-decoration: underline;
-  }
+/* Force "Jump to details" links to match muted gray */
+.toc a, .toc a:visited{
+  color: var(--muted) !important;
+  text-decoration: none !important;
+}
 
-  a:active{
-  color: var(--accent-hover);
-  }
-
-
+.toc a:hover, .toc a:focus{
+  color: var(--accent) !important;
+  text-decoration: underline !important;
 }
