@@ -207,40 +207,5 @@ footer a:hover{
   overflow: hidden;
 }
 
-/* ============================= */
-/* GLOBAL TOP BANNER (ALL PAGES) */
-/* ============================= */
-
-.hero-wrap{
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 80px 0 60px 0;
-
-  background-image: url("assets/blueprint.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  position: relative;
-  border-bottom: 1px solid var(--border);
-}
-
-/* Dark overlay for readability */
-.hero-wrap::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: rgba(8, 15, 28, 0.72);
-}
-
-/* Content container */
-.hero-inner{
-  position: relative;
-  z-index: 1;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
 
 
