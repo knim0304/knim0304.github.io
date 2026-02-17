@@ -207,45 +207,37 @@ footer a:hover{
   overflow: hidden;
 }
 
-/* Dark overlay so text stays readable */
-.hero-banner::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(8, 15, 28, 0.78);
-  z-index: 0;
-}
+/* ============================= */
+/*  FULL-WIDTH PARALLAX BANNER  */
+/* ============================= */
 
-/* Keep all header content above overlay */
-.hero-banner > *{
-  position: relative;
-  z-index: 1;
-}
-
-/* Full-width blueprint banner */
 .hero-wrap{
   width: 100%;
+  min-height: 380px;   /* controls banner height */
+
   background-image: url("assets/blueprint.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  /* creates the “banner height” */
-  padding: 70px 0 40px 0;
+  /* This makes the image stay fixed while scrolling */
+  background-attachment: fixed;
 
-  border-bottom: 1px solid var(--border);
+  padding: 90px 0 60px 0;
+
   position: relative;
+  border-bottom: 1px solid var(--border);
 }
 
-/* Dark overlay so text stays readable */
+/* Dark overlay for readability */
 .hero-wrap::before{
   content:"";
   position:absolute;
   inset:0;
-  background: rgba(8, 15, 28, 0.78);
+  background: rgba(8, 15, 28, 0.75);
 }
 
-/* Centered content container inside the full-width banner */
+/* Keep text above overlay */
 .hero-inner{
   position: relative;
   z-index: 1;
@@ -253,5 +245,6 @@ footer a:hover{
   margin: 0 auto;
   padding: 0 24px;
 }
+
 
 
