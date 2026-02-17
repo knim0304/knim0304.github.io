@@ -190,4 +190,37 @@ footer a:hover{
   color: var(--accent);
 }
 
+/* Header background banner (blueprint) */
+.hero-banner{
+  position: relative;
+  padding: 48px 28px;
+  border-radius: 18px;
+
+  /* background image */
+  background-image: url("assets/blueprint.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* optional: subtle border */
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+/* Dark overlay so text stays readable */
+.hero-banner::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 15, 28, 0.78);
+  z-index: 0;
+}
+
+/* Keep all header content above overlay */
+.hero-banner > *{
+  position: relative;
+  z-index: 1;
+}
+
+
 
