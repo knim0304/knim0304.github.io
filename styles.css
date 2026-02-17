@@ -222,5 +222,36 @@ footer a:hover{
   z-index: 1;
 }
 
+/* Full-width blueprint banner */
+.hero-wrap{
+  width: 100%;
+  background-image: url("assets/blueprint.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* creates the “banner height” */
+  padding: 70px 0 40px 0;
+
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+/* Dark overlay so text stays readable */
+.hero-wrap::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(8, 15, 28, 0.78);
+}
+
+/* Centered content container inside the full-width banner */
+.hero-inner{
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
 
 
