@@ -149,6 +149,13 @@ nav a.active{
   padding-bottom: 6px;
 }
 
+nav a.active{
+  color: var(--text) !important;
+  border-bottom: 2px solid var(--accent) !important;
+  padding-bottom: 6px;
+}
+
+
 /* Smooth scrolling for in-page links (#sections) */
 html{ scroll-behavior: smooth; }
 
